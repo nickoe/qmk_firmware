@@ -46,8 +46,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_FUNCTION] = LAYOUT_60_iso(
     //       2        3        4        5        6        7        8        9        10       11       12       13       14       15       16
     KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,
-    _______, KC_CALC, KC_UP,   _______, _______, _______, KC_INS,  KC_DEL,  KC_HOME, KC_END,  KC_PGUP, KC_PSCR, KC_PAUS,
-    _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_PGDN, _______, _______, _______,
+    _______, KC_CALC, KC_UP,   _______, _______, _______, KC_HOME, KC_PGUP, KC_PGDN, KC_END,  KC_INS, KC_PSCR, KC_PAUS,
+    _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_DEL,  _______, _______, _______,
     _______, _______, _______, KC_APP,  _______, _______, _______, _______, KC_MUTE, KC_VOLD, KC_VOLU, _______, _______,
     _______, _______, _______,                   TG(_CN),                            _______, KC_CAPS, _______, _______
   ),
@@ -60,23 +60,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, BL_DEC,  BL_TOGG, BL_INC,  BL_STEP, _______, _______, _______, _______, _______, _______, _______,
     _______, _______, _______,                   _______,                            _______, _______, _______, _______
   ),
-
-/*
-	[_FUNCTION] = LAYOUT(
-		KC_GRV, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_NO, KC_DEL,
-		KC_NO, RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-		KC_LSFT, KC_NO, KC_NO, KC_NO, BL_DEC, BL_TOGG, BL_INC, BL_STEP, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-		KC_LCTL, KC_LGUI, KC_LGUI, KC_NO, KC_NO, KC_NO, KC_RALT, KC_RGUI, KC_NO, KC_NO, KC_RCTL),
-*/
-/*
-	[_CONTROL] = LAYOUT(
-		KC_GRV,  KC_MPRV,   KC_MPLY,  KC_MNXT, M(4), M(5), M(6), M(7), M(8), M(9), M(10), M(11), M(12), KC_NO, KC_DEL,
-		KC_NO, KC_NO, KC_UP, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-		KC_NO, KC_LEFT, KC_DOWN, KC_RIGHT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-		KC_LSFT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-		KC_LCTL, KC_LGUI, KC_LALT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO),
-*/
 };
 
 enum function_id {
